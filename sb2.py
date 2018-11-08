@@ -16,9 +16,9 @@ from googletrans import Translator
 #==============================================================================#
 botStart = time.time()
 #================EvVcY4Nk9hKiJZYdRMW3.TAVOkm2wqPizxdXz1JiGmW.4QUmFeBLiOjPKtdV7+ddmEw6IuVk/aIHke+OWKLmu/Q===============================================================#
-#line = LINE()
+line = LINE()
 #line = LINE("เมล","พาส")
-line = LINE('Eye4QDfE74w2TolWT6Ub.WaU1s5FRS0mj6Vz/f6B1cW.a2GOaa9uhje9Z6JAAAxzlHtSncwO5Al6YT/ouZbRyDw=')
+#line = LINE('Eye4QDfE74w2TolWT6Ub.WaU1s5FRS0mj6Vz/f6B1cW.a2GOaa9uhje9Z6JAAAxzlHtSncwO5Al6YT/ouZbRyDw=')
 line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 
