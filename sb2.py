@@ -431,6 +431,10 @@ def myhelp():
 ╠❂͜͡☬➣ʜᴇʟᴘ6 [คำสั่งคิกเกอร์]
 ╠❂͜͡☬➣ʜᴇʟᴘ7 [คำสั่งภาษา]
 ╠❂͜͡☬➣ʜᴇʟᴘsɪʀɪ [ชุดคำสั่งบอทสิริ]
+╠❂͜͡☬➣Sp
+╠❂͜͡☬➣ออน
+╠❂͜͡☬➣ผส
+╠❂͜͡☬➣สุดหล่อ
 ╠═════════════════
 ║ 🤖 sᴇʟғʙᴏᴛ-ʙʏ:ᴍᴀx 🤖
 ╚═════════════════
@@ -1111,7 +1115,7 @@ def lineBot(op):
                 if text.lower() == 'help':
                     myHelp = myhelp()
                     line.sendMessage(to, str(myHelp))
-                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~samuri5.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~samuri5.', 'type': 'mt', 'subText': "WEE SELFBOT", 'a-installUrl': 'https://line.me/ti/p/~samuri5.', 'a-installUrl': ' https://line.me/ti/p/~samuri5.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~samuri5.', 'i-linkUri': 'https://line.me/ti/p/~samuri5.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~samuri5'}, contentType=19)
+                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == 'help1':
                     myHelp1 = myhelp1()
                     line.sendMessage(to, str(myHelp1))
@@ -1160,7 +1164,7 @@ def lineBot(op):
                     line.sendMessage(to, "กำลังเริ่มต้นใหม่ ... โปรดรอสักครู่ ..")
                     line.sendMessage(to, "Success Restarting.")
                     restartBot()
-                elif text.lower() == '.เวลออน':
+                elif text.lower() == '.ออน':
                     timeNow = time.time()
                     runtime = timeNow - botStart
                     runtime = format_timespan(runtime)
@@ -1168,7 +1172,7 @@ def lineBot(op):
                 elif text.lower() == '.ข้อมูล':
                     try:
                         arr = []
-                        owner = "uc00bb54b97ebb34309eaf67e17a6f50b"
+                        owner = "u4862fe4b182b2fd194a3108e2f3662e8"
                         creator = line.getContact(owner)
                         contact = line.getContact(lineMID)
                         grouplist = line.getGroupIdsJoined()
@@ -1231,7 +1235,7 @@ def lineBot(op):
                         else: ret_ += "\n╠❂➣✖ เตะคนแทค 🇹🇭[ ᴏғғ ] "
                         if settings["delayMention"] == True: ret_ += "\n╠❂➣✔ แทคกลับคนแทค 🇹🇭[ ᴏɴ ]"
                         else: ret_ += "\n╠❂➣✖ แทคกลับคนแทค 🇹🇭[ ᴏғғ ] \n╠═══════[ระบบป้องกัน]══════════"
-                        if RfuProtect["inviteprotect"] == True: ret_ += "\n╠❂➣✔ กันเชิญ 🇹??[ ᴏɴ ]"
+                        if RfuProtect["inviteprotect"] == True: ret_ += "\n╠❂➣✔ กันเชิญ 🇹🇭[ ᴏɴ ]"
                         else: ret_ += "\n╠❂➣✖ กันเชิญ 🇹🇭[ ᴏғғ ] "
                         if RfuProtect["cancelprotect"] == True: ret_ += "\n╠❂➣✔ กันยกเชิญ 🇹🇭[ ᴏɴ ]"
                         else: ret_ += "\n╠❂➣✖ กันยกเชิญ 🇹🇭[ ᴏғғ ]"
@@ -1242,11 +1246,11 @@ def lineBot(op):
                         if RfuProtect["Protectguest"] == True: ret_ += "\n╠❂➣✔ ป้องกันสมาชิก 🇹🇭[ ᴏɴ ]"
                         else: ret_ += "\n╠❂➣✖ ป้องกันสมาชิก 🇹🇭[ ᴏғғ ] "
                         if RfuProtect["Protectjoin"] == True: ret_ += "\n╠❂➣✔ ป้องกันเข้ากลุ่ม 🇹🇭[ ᴏɴ ]"
-                        else: ret_ += "\n╠❂➣✖ ป้องกันเข้ากลุ่ม ??🇭[ ᴏғғ ]"						
-                        ret_ += "\n╠══════════════┓\n║    :™❍✯͜͡WEE™SELFBOT✯͜͡❂➣\n╚══════════════┛"
+                        else: ret_ += "\n╠❂➣✖ ป้องกันเข้ากลุ่ม 🇹🇭[ ᴏғғ ]"						
+                        ret_ += "\n╠══════════════┓\n║  : SELFBOT-BY:MAX\n╚══════════════┛"
                         line.sendMessage(to, str(ret_))
                         #line.sendContact(to, adminMID)
-                        line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~tome2527", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~tomebot333', 'type': 'mt', 'subText': "WEE BOTLINE", 'a-installUrl': 'https://line.me/ti/p/~tomebot333', 'a-installUrl': ' https://line.me/ti/p/~tomebot333', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~timebot333', 'i-linkUri': 'https://line.me/ti/p/~tomebot333', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~tomebot333'}, contentType=19)
+                        line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv', 'a-installUrl': ' https://line.me/ti/p/~max_pv', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv', 'i-linkUri': 'https://line.me/ti/p/~max_pv', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                         #ret_ += "\n╚════[ Status ]═════┛"
                         #line.sendMessage(to, str(ret_))
                         #line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~samuri5.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~samuri5.', 'type': 'mt', 'subText': "SAMURAI BOT", 'a-installUrl': 'https://line.me/ti/p/~samuri5.', 'a-installUrl': ' https://line.me/ti/p/~samuri5.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~samuri5.', 'i-linkUri': 'https://line.me/ti/p/~samuri5.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~samuri5'}, contentType=19)
@@ -1341,7 +1345,7 @@ def lineBot(op):
                     line.sendImageWithURL(msg.to, cover)
                     line.sendMessage(msg.to,str(settings["comment"]))
                 elif text.lower() == ".สุดหล่อ":
-                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~samuri5.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~samuri5.', 'type': 'mt', 'subText': "SAMURAI BOT", 'a-installUrl': 'https://line.me/ti/p/~samuri5.', 'a-installUrl': ' https://line.me/ti/p/~samuri5.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~samuri5.', 'i-linkUri': 'https://line.me/ti/p/~samuri5.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~samuri5'}, contentType=19)
+                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == ".ศรราม":
                     userid = "https://line.me/ti/p/~" + line.profile.userid
                     line.sendImageWithFooter(to, "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, str(userid), "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName)
@@ -1352,7 +1356,7 @@ def lineBot(op):
                     line.sendContact(to, lineMID)
                 elif text.lower() == '.ผส':
                     sendMessageWithMention(to, lineMID)
-                    line.sendContact(to, "uc00bb54b97ebb34309eaf67e17a6f50b")
+                    line.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
                 elif text.lower() == '.ไอดี':
                     line.sendMessage(msg.to,"[MID]\n" +  lineMID)
                 elif text.lower() == '.ชื่อ':
