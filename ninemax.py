@@ -1347,7 +1347,7 @@ def lineBot(op):
                     settings["unsendMessage"] = False
                     line.sendMessage(to, "ปิดระบบดูยกเลิกแชท")
 #==============================================================================#
-                elif msg.text.lower() == "me":
+                elif msg.text.lower() == "กู":
                     me = line.getContact(lineMID)
                     line.sendMessage(msg.to,"[👇ชื่อของพี่👇]")
                     sendMessageWithMention(to, lineMID)
@@ -1357,8 +1357,10 @@ def lineBot(op):
                     cover = line.getProfileCoverURL(lineMID)
                     line.sendImageWithURL(msg.to, cover)
                     line.sendMessage(msg.to,str(settings["comment"]))
+                elif cmd == "me" or cmd == ".me":
+                    line.sendMentionFooter(to, '「 sᴇʟғʙᴏᴛ-ʙʏ:ᴍᴀx 」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+client.getContact(sender).pictureStatus, client.getContact(sender).displayName);client.sendMessage(to, client.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+client.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv', 'type': 'mt', 'subText': "sᴇʟғʙᴏᴛ-ʙʏ:ᴍᴀx", 'a-installUrl': 'https://line.me/ti/p/~max_pv', 'a-installUrl': ' https://line.me/ti/p/~max_pv', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv', 'i-linkUri': 'https://line.me/ti/p/~max_pv', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == ".คท":
-                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
+                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv', 'a-installUrl': ' https://line.me/ti/p/~max_pv', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv', 'i-linkUri': 'https://line.me/ti/p/~max_pv', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == ".ศรราม":
                     userid = "https://line.me/ti/p/~" + line.profile.userid
                     line.sendImageWithFooter(to, "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, str(userid), "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName)
