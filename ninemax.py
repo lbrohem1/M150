@@ -1122,26 +1122,31 @@ def lineBot(op):
                 elif text.lower() == 'help1':
                     myHelp1 = myhelp1()
                     line.sendMessage(to, str(myHelp1))
-                    sendMessageWithMention(to, lineMID)
+                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == 'help2':
                     helpSet = helpset()
                     line.sendMessage(to, str(helpSet))
-                    sendMessageWithMention(to, lineMID)
+                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == 'help3':
                     listGrup = listgrup()
                     line.sendMessage(to, str(listGrup))
+                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == 'help4':
                     helpSetting = helpsetting()
                     line.sendMessage(to, str(helpSetting))
+                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == 'help5':
                     socMedia = socmedia()
                     line.sendMessage(to, str(socMedia))
+                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == 'help6':
                     helpTextToSpeech = helptexttospeech()
                     line.sendMessage(to, str(helpTextToSpeech))
+                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == 'help7':
                     helpLanguange = helplanguange()
                     line.sendMessage(to, str(helpLanguange))
+                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == 'helpsiri':
                     helpSiri= helpsiri()
                     line.sendMessage(to, str(helpSiri))
@@ -1149,23 +1154,22 @@ def lineBot(op):
 #==============================================================================#
                 elif text.lower() == 'speed':
                     start = time.time()
-                    line.sendMessage(to, "กำลังทดสอบ")
+                    line.sendMessage(to, "[ กำลังทดสอบ... ]")
                     elapsed_time = time.time() - start
                     line.sendMessage(msg.to, "[ %s Seconds ] [ " % (elapsed_time) + str(int(round((time.time() - start) * 1000)))+" ms ]")
-                    #print (to,"Speed sender in group {}").format(puy.getGroup(to).name)
                 elif text.lower() == '.วัดรอบ':
                     start = time.time()
-                    line.sendMessage(to, "กำลังทดสอบ")
+                    line.sendMessage(to, "[ กำลังทดสอบ... ]")
                     elapsed_time = time.time() - start
                     line.sendMessage(msg.to, "[ %s Seconds ] [ " % (elapsed_time) + str(int(round((time.time() - start) * 1000)))+" ms ]")
                 elif text.lower() == 'sp':
                     start = time.time()
-                    line.sendMessage(to, "กำลังทดสอบ")
+                    line.sendMessage(to, "[ กำลังทดสอบ... ]")
                     elapsed_time = time.time() - start
                     line.sendMessage(msg.to, "[ %s Seconds ] [ " % (elapsed_time) + str(int(round((time.time() - start) * 1000)))+" ms ]")
                 elif text.lower() == '.เริ่มใหม่':
-                    line.sendMessage(to, "กำลังเริ่มต้นใหม่ ... โปรดรอสักครู่ ..")
-                    line.sendMessage(to, "Success Restarting.")
+                    line.sendMessage(to, "กำลังเริ่มต้นใหม่ ...\nโปรดรอสักครู่ ..")
+                    line.sendMessage(to, "กรุณาล็อคเชลใหม่...")
                     restartBot()
                 elif text.lower() == '.ออน':
                     timeNow = time.time()
@@ -1252,11 +1256,7 @@ def lineBot(op):
                         else: ret_ += "\n╠❂➣✖ ป้องกันเข้ากลุ่ม 🇹🇭[ ᴏғғ ]"						
                         ret_ += "\n╠══════════════┓\n║  : SELFBOT-BY:MAX\n╚══════════════┛"
                         line.sendMessage(to, str(ret_))
-                        #line.sendContact(to, adminMID)
                         line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv', 'a-installUrl': ' https://line.me/ti/p/~max_pv', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv', 'i-linkUri': 'https://line.me/ti/p/~max_pv', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
-                        #ret_ += "\n╚════[ Status ]═════┛"
-                        #line.sendMessage(to, str(ret_))
-                        #line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~samuri5.", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~samuri5.', 'type': 'mt', 'subText': "SAMURAI BOT", 'a-installUrl': 'https://line.me/ti/p/~samuri5.', 'a-installUrl': ' https://line.me/ti/p/~samuri5.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~samuri5.', 'i-linkUri': 'https://line.me/ti/p/~samuri5.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~samuri5'}, contentType=19)
                     except Exception as e:
                         line.sendMessage(msg.to, str(e))
                 elif text.lower() == '.เปิดแอด':
@@ -1311,7 +1311,7 @@ def lineBot(op):
                     line.sendMessage(to, "เปิดระบบออกแชทรวมอัตโนมัติ")
                 elif text.lower() == '.ปิดออก':
                     settings["autoLeave"] = False
-                    line.sendMessage(to, "Autoleave disabled.")
+                    line.sendMessage(to, "ปิดระบบออกแชทรวมอัตโนมัติ")
                 elif text.lower() == '.เปิดอ่าน':
                     settings["autoRead"] = True
                     line.sendMessage(to, "Autoread message enabled.")
@@ -1359,7 +1359,7 @@ def lineBot(op):
                     line.sendContact(to, lineMID)
                 elif text.lower() == '.ผส':
                     sendMessageWithMention(to, lineMID)
-                    line.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
+                    line.sendContact(to, "u83211e3b69096f869d545aed2d1724d3")
                 elif text.lower() == '.ไอดี':
                     line.sendMessage(msg.to,"[MID]\n" +  lineMID)
                 elif text.lower() == '.ชื่อ':
