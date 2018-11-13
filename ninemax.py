@@ -40,10 +40,10 @@ Rfu = [line]
 Exc = [line]
 lineMID = line.getProfile().mid
 bot1 = line.getProfile().mid
-RfuBot=["u4862fe4b182b2fd194a3108e2f3662e8",lineMID]
-Family=['u4862fe4b182b2fd194a3108e2f3662e8',lineMID]
-admin=["u4862fe4b182b2fd194a3108e2f3662e8",lineMID]
-adminMID="u4862fe4b182b2fd194a3108e2f3662e8"
+RfuBot=["u83211e3b69096f869d545aed2d1724d3",lineMID]
+Family=['u83211e3b69096f869d545aed2d1724d3',lineMID]
+admin=["u83211e3b69096f869d545aed2d1724d3",lineMID]
+adminMID="u83211e3b69096f869d545aed2d1724d3"
 RfuFamily = RfuBot + Family
 msg_dict = {}
 msg_image={}
@@ -111,7 +111,7 @@ settings = {
     "welcome":"สวัสดีครับคนมาใหม่ 😘",
     "kick":"😱 อุ๊ต๊ะ.. 😱",
     "bye":"บ๊าย..บาย 😭",
-    "Respontag":"SELFBOT-BY:MAX",
+    "Respontag":"เหมือนมึงเหงา 👾",
     "eror":"คุณใช้คำสั่งผิด กรุณาศึกษาวิธีใช้ หรือสอบถามกับผู้สร้าง โดยพิมคำสั่ง *.ผส*เพื่อแสดง คท ของผู้สร้าง",
     "spam":{},
     "invite": {},
@@ -133,8 +133,8 @@ settings = {
     "server": "VPS",
     "ksticker": False,
     "timeRestart": "18000",
-    "message1":"SELFBOT-BY:MAX",
-    "message":"บัญชีนี้ถูกป้องกันโดย SELFBOT-BY:MAX ระบบได้ทำการบล็อคคุณอัตโนมัติ",
+    "message1":"บัญชีนี้ได้รับการป้องกันโดย\n🇹🇭 SELFBOT-BY:MAX 🇹🇭\nทางบัญชีจึงขอทำการบล็อค\nเพื่อความปลอดภัยในบัญชี 🤖",
+    "message":"【さัএπัஞ✵ບิथℓℓҨतΩ】 :\nList opsi\n🤖 Pasangan Hidup :\n🔰 Only Status 🔰 180K/Bulan\n\n🤖 Systim Contract :\n🔰 Only Curhat 🔰 100K/Bulan\n🔰 Zona Friend + TTM\n🔰 Zona Nyaman + Full Care + On 5day + 2 day free 🔰 300K/Bulan\n\n✍️ Bisa Requests Mau Berapa Lama Durasi Buat Debay.\nChat Ke : http://line.me/ti/p/%40spm7024h\n\n📃\n* Always on 24 Jam\n* Keuntungan Banyak\n* Durasi min 0.25month\n* max no limit",
     "comment":"""SELFBOT-BY:MAX""",
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
@@ -1357,11 +1357,9 @@ def lineBot(op):
                     cover = line.getProfileCoverURL(lineMID)
                     line.sendImageWithURL(msg.to, cover)
                     line.sendMessage(msg.to,str(settings["comment"]))
-                elif cmd == "me" or cmd == ".me":
-                    line.sendMentionFooter(to, '「 sᴇʟғʙᴏᴛ-ʙʏ:ᴍᴀx 」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+client.getContact(sender).pictureStatus, client.getContact(sender).displayName);client.sendMessage(to, client.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+client.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv', 'type': 'mt', 'subText': "sᴇʟғʙᴏᴛ-ʙʏ:ᴍᴀx", 'a-installUrl': 'https://line.me/ti/p/~max_pv', 'a-installUrl': ' https://line.me/ti/p/~max_pv', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv', 'i-linkUri': 'https://line.me/ti/p/~max_pv', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == ".คท":
                     line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv', 'a-installUrl': ' https://line.me/ti/p/~max_pv', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv', 'i-linkUri': 'https://line.me/ti/p/~max_pv', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
-                elif text.lower() == ".ศรราม":
+                elif text.lower() == ".นายแม็ค":
                     userid = "https://line.me/ti/p/~" + line.profile.userid
                     line.sendImageWithFooter(to, "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, str(userid), "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName)
                     line.sendMentionFooter(to, '「Me」\n', sender, str(userid), "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName)
