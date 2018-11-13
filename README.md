@@ -1,11 +1,10 @@
-# SAMURAI BOT เวอร์ชั่น2 เอาไปลองใช้ สนใจเวอร์ชั่น3 เวอร์ชั่น4
-# โทรมาได้ที่ 0946345913 หรือที่ไอดีไลน์ sanuri5
+# SELFBOT-BY:MAX
 1. apt update
 2. apt upgrade
 3. pkg install python3
 4. pkg install pip3
 5. pkg install git
-6. git clone https://github.com/redsamuri5/adminpy3.git
+6. git clone https://github.com/0954517662/MAX0.git
 7. pkg install nano
 8. pip3 install rsa
 9. pip3 install thrift==0.11.0
@@ -19,5 +18,8 @@
 17. pip3 install linepy
 18. pip3 install akad
 19. cd adminpy3
-20. nano sb.py
-21. python3 sb.py
+20. nano MAX0.py
+21. python3 ninemax.py
+
+# เชลบอทคนที่อยู่ดาวอังคาร กูไปปล้นมา
+# กว่าจะปล้นมาได้นานมาก ^_^
