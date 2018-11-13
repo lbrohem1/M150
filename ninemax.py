@@ -420,7 +420,7 @@ def command(text):
     return cmd
 def myhelp():
     myHelp = """╔═════════════════
-║ 🤖 sᴇʟғʙᴏᴛ-ʙʏ:ᴍᴀx 🤖
+╠❂͜͡☬➣ คำสั่งเชลบอท 
 ╠═════════════════
 ╠❂͜͡☬➣ʜᴇʟᴘ [คำสั่งเซลบอท]
 ╠❂͜͡☬➣ʜᴇʟᴘ1 [คำสั่งในกลุ่ม]
@@ -1185,17 +1185,17 @@ def lineBot(op):
                         grouplist = line.getGroupIdsJoined()
                         contactlist = line.getAllContactIds()
                         blockedlist = line.getBlockedContactIds()
-                        ret_ = "╔══[ ™❍✯͜͡WEE™SELFBOT✯͜͡❂➣]"
+                        ret_ = "╔══[ sᴇʟғʙᴏᴛ-ʙʏ:ᴍᴀx ]"
                         ret_ += "\n╠۝ ชื่อ ═ {}".format(contact.displayName)
                         ret_ += "\n╠۝ กลุ่ม ═ {}".format(str(len(grouplist)))
                         ret_ += "\n╠۝ เพื่อน ═ {}".format(str(len(contactlist)))
                         ret_ += "\n╠۝ บล็อค ═ {}".format(str(len(blockedlist)))
                         ret_ += "\n╠۝[สถานะ] ═ {}".format(contact.statusMessage)
                         ret_ += "\n╠۝ ผู้สร้าง ═ {}".format(creator.displayName)
-                        ret_ += "\n╚══[™❍✯͜͡WEE™SELFBOT✯͜͡❂➣]"
+                        ret_ += "\n╚══[ sᴇʟғʙᴏᴛ-ʙʏ:ᴍᴀx ]"
                         line.sendContact(to, owner)
                         line.sendMessage(to, str(ret_))
-                        line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~tomebot333", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~samuri5.', 'type': 'mt', 'subText': "WEE SELFBOT", 'a-installUrl': 'https://line.me/ti/p/~samuri5.', 'a-installUrl': ' https://line.me/ti/p/~samuri5.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~samuri5.', 'i-linkUri': 'https://line.me/ti/p/~samuri5.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~samuri5'}, contentType=19)
+                        line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                     except Exception as e:
                         line.sendMessage(msg.to, str(e))
 #==============================================================================#
