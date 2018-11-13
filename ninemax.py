@@ -814,7 +814,7 @@ def helplanguange():
 ╠❂͜͡☬➣ι∂ : อินโดนีเซีย 
 ╠❂͜͡☬➣gα : ไอริส 
 ╠❂͜͡☬➣ιт : อิตาลี 
-╠❂͜͡☬➣נα : ญี่ปุ่น 
+╠❂͜͡☬➣ᴊᴀ : ญี่ปุ่น 
 ╠❂͜͡☬➣ки : แคนาดา 
 ╠❂͜͡☬➣ℓα : ลาติน 
 ╠❂͜͡☬➣ℓν : ลัตเวีย 
@@ -1203,7 +1203,7 @@ def lineBot(op):
                         ret_ += "\n╚══[ sᴇʟғʙᴏᴛ-ʙʏ:ᴍᴀx ]"
                         line.sendContact(to, owner)
                         line.sendMessage(to, str(ret_))
-                        line.sendContact(to, "u83211e3b69096f869d545aed2d1724d3")
+                        #line.sendContact(to, "u83211e3b69096f869d545aed2d1724d3")
                         #line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv.', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv.', 'a-installUrl': ' https://line.me/ti/p/~max_pv.', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv.', 'i-linkUri': 'https://line.me/ti/p/~max_pv.', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                     except Exception as e:
                         line.sendMessage(msg.to, str(e))
@@ -1347,7 +1347,7 @@ def lineBot(op):
                     settings["unsendMessage"] = False
                     line.sendMessage(to, "ปิดระบบดูยกเลิกแชท")
 #==============================================================================#
-                elif msg.text.lower() == "กู":
+                elif msg.text.lower() == "me":
                     me = line.getContact(lineMID)
                     line.sendMessage(msg.to,"[👇ชื่อของพี่👇]")
                     sendMessageWithMention(to, lineMID)
@@ -1358,7 +1358,7 @@ def lineBot(op):
                     line.sendImageWithURL(msg.to, cover)
                     line.sendMessage(msg.to,str(settings["comment"]))
                 elif text.lower() == ".คท":
-                    line.sendMentionFooter(to, '「ผู้สร้างบอท」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv', 'a-installUrl': ' https://line.me/ti/p/~max_pv', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv', 'i-linkUri': 'https://line.me/ti/p/~max_pv', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
+                    line.sendMentionFooter(to, '「 ผู้สร้างบอท 」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv', 'a-installUrl': ' https://line.me/ti/p/~max_pv', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv', 'i-linkUri': 'https://line.me/ti/p/~max_pv', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                 elif text.lower() == ".นายแม็ค":
                     userid = "https://line.me/ti/p/~" + line.profile.userid
                     line.sendImageWithFooter(to, "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, str(userid), "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName)
@@ -1634,13 +1634,13 @@ def lineBot(op):
                         settings["detectMention"] = True
                         settings["delayMention"] = True
                         settings["Api"] = True
-                        line.sendText(msg.to,"การตั้งค่าชุดข้อความทั้งหมด เปิด👌")
+                        line.sendText(msg.to,"การตั้งค่าชุดข้อความทั้งหมด เปิด")
 						
                 elif msg.text in ["Allmsg off",".ปิดข้อความ"]:
                         settings["Wc"] = False
                         settings["Lv"] = False
                         settings["Nk"] = False
-                        settings["autoRead"] = True
+                        settings["autoRead"] = False
                         settings["checkSticker"] = False 
                         settings["checkContact"] = False 
                         settings["checkPost"] = False
@@ -1648,7 +1648,7 @@ def lineBot(op):
                         settings["potoMention"] = False
                         settings["delayMention"] = False
                         settings["Api"] = False
-                        line.sendText(msg.to,"การตั้งค่าชุดข้อความทั้งหมด ปิด👌")
+                        line.sendText(msg.to,"การตั้งค่าชุดข้อความทั้งหมด ปิด")
 #==============================================================================#
                 elif msg.text.lower().startswith("mimicadd "):
                     targets = []
@@ -1760,7 +1760,7 @@ def lineBot(op):
                     group = line.getGroup(to)
                     GS = group.creator.mid
                     line.sendContact(to, GS)
-                    line.sendMessage(to, "☝คนนี้แหล่ะคนสร้างกลุ่มนี้")
+                    line.sendMessage(to, "☝ คนนี้แหล่ะคนสร้างกลุ่มนี้")
                 elif text.lower() == '.ไอดีกลุ่ม':
                     gid = line.getGroup(to)
                     line.sendMessage(to, "ไอดีกลุ่ม \n" + gid.id)
@@ -1819,8 +1819,8 @@ def lineBot(op):
                     ret_ += "\n╠ จำนวนสมาชิก : {}".format(str(len(group.members)))
                     ret_ += "\n╠ จำนวนค้างเชิญ : {}".format(gPending)
                     ret_ += "\n╠ ลิ้งของกลุ่ม : {}".format(gQr)
-                    ret_ += "\n╠ ลิ้งกลุ่ม👉 : {}".format(gTicket)
-                    ret_ += "\n╚══[ Finish ]"
+                    ret_ += "\n╠ ลิ้งกลุ่ม : {}".format(gTicket)
+                    ret_ += "\n╚══[ SELFBOT-BY:MAX ]"
                     line.sendMessage(to, str(ret_))
                     line.sendImageWithURL(to, path)
                 elif text.lower() == '.สมาชิกกลุ่ม':
@@ -1985,9 +1985,9 @@ def lineBot(op):
                                thisgroup = line.getGroups([msg.to])
                                Mids = [target for contact in thisgroup[0].members]
                                mi_d = Mids[:33]
-                               line.createGroup("RED SAMURI Group",mi_d)
+                               line.createGroup("SELFBOT-BY:MAX",mi_d)
                                line.sendText(msg.to,"🏂⛷️[จะออกไปแตะขอบฟ้า]")
-                               line.createGroup("RED SAMURI Group",mi_d)
+                               line.createGroup("SELFBOT-BY:MAX",mi_d)
                                line.sendText(msg.to,"🏂⛷️[จะออกไปแตะขอบฟ้า]")
                                line.sendText(msg.to,"เรียบร้อย")
                             except:
@@ -1999,126 +1999,129 @@ def lineBot(op):
                     gs = line.getGroup(msg.to)
                     for g in gs.members:
                         if _nametarget == g.displayName:
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI")
-                           line.sendText(g.mid,"RED SAMURI") 
-                           line.sendText(g.mid,"RED SAMURI")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
+                           line.sendText(g.mid,"SELFBOT-BY:MAX")
                            line.sendText(msg.to, "Done")
-                           print (" Spammed !")
+                           print ("[ Spam Max ]")
                 elif ".ดึงห้อง" in msg.text:
                     thisgroup = line.getGroups([msg.to])
                     Mids = [contact.mid for contact in thisgroup[0].members]
                     mi_d = Mids[:33]
-                    line.createGroup("RED SAMURAI SELFBOT", mi_d)
-                    line.sendText(msg.to,"welcome to room RED SAMURAI SELFBOT")
+                    line.createGroup("SELFBOT-BY:MAX", mi_d)
+                    line.sendText(msg.to,"WELCOME TO ROOM SELFBOT-BY:MAX")
                 elif ".ไม่รับเชิญ " in msg.text.lower():
                     spl = re.split(".ไม่รับเชิญ ",msg.text,flags=re.IGNORECASE)
                     if spl[0] == "":
@@ -2146,12 +2149,12 @@ def lineBot(op):
                         msg.text = None
                         msg.contentMetadata = {"mid":spl[1]}
                         line.sendMessage(msg)
-                elif ".หวด" in msg.text.lower():
+                elif ".หวด " in msg.text.lower():
                     if msg.toType == 2:
                         prov = eval(msg.contentMetadata["MENTION"])["MENTIONEES"]
                         for i in range(len(prov)):
-                            random.choice(Exc).kickoutFromGroup(msg.to,[prov[i]["M"]])
-                elif ".ปลิว" in msg.text.lower():
+                            line.kickoutFromGroup(msg.to,[prov[i]["M"]])
+                elif ".ปลิว " in msg.text.lower():
                     if msg.toType == 2:
                         prov = eval(msg.contentMetadata["MENTION"])["MENTIONEES"]
                         allmid = []
@@ -2172,7 +2175,7 @@ def lineBot(op):
                     if msg.toType == 2:
                         prov = eval(msg.contentMetadata["MENTION"])["MENTIONEES"]
                         for i in range(len(prov)):
-                            random.choice(Exc).kickoutFromGroup(msg.to,[prov[i]["M"]])
+                            line.kickoutFromGroup(msg.to,[prov[i]["M"]])
                 elif ".หำเตะด่วน" in msg.text.lower():
                     if msg.toType == 2:
                         prov = eval(msg.contentMetadata["MENTION"])["MENTIONEES"]
@@ -2330,8 +2333,8 @@ def lineBot(op):
                     line.sendMessage(to, "███████▒... 70.0%")
                     line.sendMessage(to, "████████▒... 80.0%")
                     line.sendMessage(to, "█████████▒... 90.0%")
-                    line.sendMessage(to, "███████████..100.0%")
-                    line.sendMessage(to, "👍〘บอทยังอยู่ครับท่าน〙👍") 
+                    line.sendMessage(to, "███████████...100.0%")
+                    line.sendMessage(to, "🤖〘 บอทยังอยู่ครับเว้ย 〙🤖")
 
                 elif text.lower() == ".ไปหำ":
                     if msg._from in Family:
@@ -4173,7 +4176,7 @@ def lineBot(op):
                     gruplist = line.getAllContactIds()
                     kontak = line.getContacts(gruplist)
                     num=1
-                    msgs="™❍✯͜͡RED™SAMURI✯͜͡❂➣"
+                    msgs="SELFBOT-BY:MAX"
                     for ids in kontak:
                         msgs+="\n[%i] %s" % (num, ids.mid)
                         num=(num+1)
@@ -4249,7 +4252,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "ตั้งข้อความเรืยบร้อย")
                      else:
                          settings["message"] = spl
-                         line.sendMessage(msg.to, "™❍✯͜͡RED™SAMURI✯͜͡❂➣\n👇ตั้งข้อความตอบโต้เมื่อมีคนแอดแล้ว ดังนี้👇\n\n👉{}".format(str(spl)))
+                         line.sendMessage(msg.to, "SELFBOT-BY:MAX\n👇ตั้งข้อความตอบโต้เมื่อมีคนแอดแล้ว ดังนี้👇\n\n👉{}".format(str(spl)))
                          
                 elif '.คอมเม้น: ' in msg.text:
                   if msg._from in admin:
@@ -4258,7 +4261,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "ตั้งข้อความเรืยบร้อย")
                      else:
                          settings["comment"] = spl
-                         line.sendMessage(msg.to, "™❍✯͜͡RED™SAMURI✯͜͡❂➣\n👇ตั้งข้อความคอมเม้นของคุณแล้ว ดังนี้👇\n\n👉{}".format(str(spl))) 
+                         line.sendMessage(msg.to, "SELFBOT-BY:MAX\n👇ตั้งข้อความคอมเม้นของคุณแล้ว ดังนี้👇\n\n👉{}".format(str(spl))) 
                     
                 elif '.ตั้งแทค: ' in msg.text:
                   if msg._from in admin:
@@ -4267,7 +4270,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "ตั้งข้อความเรืยบร้อย")
                      else:
                          settings["Respontag"] = spl
-                         line.sendMessage(msg.to, "™❍✯͜͡RED™SAMURI✯͜͡❂➣\n👇ตั้งข้อความตอบโต้เมื่อมีคนแทคแล้ว👇\n\n👉{}".format(str(spl)))
+                         line.sendMessage(msg.to, "SELFBOT-BY:MAX\n👇ตั้งข้อความตอบโต้เมื่อมีคนแทคแล้ว👇\n\n👉{}".format(str(spl)))
                          
                 elif '.ทักเตะ: ' in msg.text:
                   if msg._from in admin:
@@ -4276,7 +4279,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "ตั้งข้อความคนคนลบสมาชิดเรียบร้อย")
                      else:
                           settings["kick"] = spl
-                          line.sendMessage(msg.to, "™❍✯͜͡RED™SAMURI✯͜͡❂➣\nตั้งค่าข้อความเมื่อมีคนลบสมาชิกแล้ว\nดังนี้👇\n\n👉{}".format(str(spl)))
+                          line.sendMessage(msg.to, "SELFBOT-BY:MAX\nตั้งค่าข้อความเมื่อมีคนลบสมาชิกแล้ว\nดังนี้👇\n\n👉{}".format(str(spl)))
 
                 elif '.ทักออก: ' in msg.text:
                   if msg._from in admin:
@@ -4285,7 +4288,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "ตั้งข้อความคนออกเรียบร้อย")
                      else:
                           settings["bye"] = spl
-                          line.sendMessage(msg.to, "™❍✯͜͡RED™SAMURI✯͜͡❂➣\nตั้งค่าข้อความเมื่อมีคนออกจากกลุ่มแล้ว\nดังนี้👇\n\n👉{}".format(str(spl)))
+                          line.sendMessage(msg.to, "SELFBOT-BY:MAX\nตั้งค่าข้อความเมื่อมีคนออกจากกลุ่มแล้ว\nดังนี้👇\n\n👉{}".format(str(spl)))
 
                 elif '.ทักเข้า: ' in msg.text:
                   if msg._from in admin:
@@ -4294,7 +4297,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "ตั้งข้อความคนเข้าเรียบร้อยแล้ว")
                      else:
                           settings["welcome"] = spl
-                          line.sendMessage(msg.to, "™❍✯͜͡RED™SAMURI✯͜͡❂➣\nตั้งค่าข้อความเมื่อมีคนเข้ากลุ่มแล้ว\nดังนี้👇\n\n👉{}".format(str(spl)))
+                          line.sendMessage(msg.to, "SELFBOT-BY:MAX\nตั้งค่าข้อความเมื่อมีคนเข้ากลุ่มแล้ว\nดังนี้👇\n\n👉{}".format(str(spl)))
                 elif msg.text.lower() == "เปิดกันติ๊ก":
                         settings["sticker"] = True
                         line.sendMessage(to,"เปิดเตะคนรันสติกเกอรแล้ว")
@@ -4551,7 +4554,7 @@ def lineBot(op):
                                          line.sendMessage(receiver,"Group cleanse")
                                          print ("Cleanse Group")
 
-                elif msg.text in [".ไล่ดำ"]:
+                elif msg.text in [".ล่า"]:
                 	if msg.toType == 2:
                          group = line.getGroup(receiver)
                          gMembMids = [contact.mid for contact in group.members]
@@ -5367,14 +5370,14 @@ def lineBot(op):
                 if settings ["Aip"] == True:
             	    if msg.text in ["cleanse","group cleansed.","mulai",".winebot",".kickall","mayhem","kick on","Kick","!kickall","nuke","บิน","Kick","กระเด็น","หวด","เซลกากจัง","เตะ",".","ปลิว"]:
                         line.kickoutFromGroup(receiver,[sender])
-                        line.sendText(msg.to,"ตรวจพบคำสั่งของบอทลบกลุ่ม จำเป็นต้องนำออกเพื่อความปลอดภัยของสมาชิก (｀・ω・´)")
+                        line.sendText(msg.to,"ตรวจพบคำสั่งของบอทลบกลุ่ม จำเป็นต้องนำออกเพื่อความปลอดภัยของสมาชิก 🏵")
                 if settings ["Aip"] == True:
                     if msg.text in ["ควย","หี","แตด","เย็ดแม่","เย็ดเข้","ค.วย","สัส","เหี้ย","ไอ้เหี้ย","พ่อมึงตาย","ไอ้เลว","ระยำ","ชาติหมา","หน้าหี","เซลกาก","ไอ้เรส","ไอ้เหี้ยเรส","ไอ่เรส","พ่องตาย","ส้นตีน","แม่มึงอ่ะ","แม่มึงดิ","พ่อมึงดิ"]:
                         line.kickoutFromGroup(receiver,[sender])
-                        line.sendText(msg.to,"ตรวจพบคำพูดหยาบคายไม่สุภาพ จำเป็นต้องนำออกเพื่อความสงบสุขของสมาชิก (｀・ω・´)")
-              #if settings ["Api"] == True:
-            	    #if msg.text in ["ป๊า","ป๊าเรส","ลุง","เรส","นาย","เพื่อน","จาร์ย","อาจาร์ย","เฮีย"]:
-                  #      line.sendMessage(msg.to, str(settings["comment"]))
+                        line.sendText(msg.to,"ตรวจพบคำพูดหยาบคายไม่สุภาพ จำเป็นต้องนำออกเพื่อความสงบสุขของสมาชิก 🏵")
+                if settings ["Api"] == True:
+            	    if msg.text in ["ป๊า","แมค","ลุง","แมก","นาย","เพื่อน","จาร์ย","อาจาร์ย","เฮีย"]:
+                        line.sendMessage(msg.to, str(settings["comment"]))
                 if settings ["Api"] == True:
                     if msg.text in ["เซล","เซลบอท","selfbot","ขายบอท"]:
                         line.sendMessage(msg.to, str(settings["comment"]))
@@ -5400,30 +5403,30 @@ def lineBot(op):
                     	line.sendMessage(msg.to, None, contentMetadata={"STKID":"51626516","STKPKGID":"11538","STKVER":"1"}, contentType=7)
             if settings ["Api"] == True:
                 if msg.text in ["อยู่ไหม","เช็คบอท","/เทส","ออนใหม"]:
-                    line.sendText(msg.to,"🔷บอททำงานอยู่ 100%\n\n🔘[by.™─┅❈͜͡✯WEEBOTLINE✯͜͡❈┅─]")
+                    line.sendText(msg.to,"บอททำงานอยู่ 100%\n[ BY: SELFBOT-BY:MAX ]")
             if settings ["Api"] == True:
                 if msg.text in ["สวัดดี","หวัดดี","ดีจ้า","ดีครับ","ดี","สวัสดีครับ","สวัสดีค่ะ","ดีงับๆ","ดีงับ","หวัดดีงับๆ"]:
-                    line.sendText(msg.to,"🔘▶กองๆเอาใว้ตรงนั้นแหล่ะจ้า อิอิ")
+                    line.sendText(msg.to,"ดีพ่อมึงหรอ อิอิ 👾")
             if settings ["Api"] == True:
                 if msg.text in ["/ออน",".ออน",".เวลาออน",".เทส",".อยู่ไหม"]:
-                    line.sendText(msg.to,"🆗บอททำงานอยู่100%🆗\n🔘[by.™─┅❈͜͡✯WEEBOLINE✯͜͡❈┅─]")
+                    line.sendText(msg.to,"บอททำงานอยู่100%\n[ BY: SELFBOT-BY:MAX ]")
                     line.sendText(msg.to,".เวลออน")                    
             if settings ["Api"] == True:
                 if msg.text in ["/ตั้งเวลา",".ตั้งเวลา",".ตั้ง","/ตั้ง","/จับ"]:
-                    line.sendText(msg.to,"🔷กำลังรีเซ็ทระบบตั้งค่าคนอ่าน🔷\n🔘[by.™─┅❈͜͡✯WEEBOTLINE✯͜͡❈┅─]")
+                    line.sendText(msg.to,"👾กำลังรีเซ็ทระบบตั้งค่าคนอ่าน👾\n[ BY: SELFBOT-BY:MAX ]")
                     line.sendText(msg.to,".จับ")
             if settings ["Api"] == True:
                 if msg.text in ["/อ่าน",".คนอ่าน","/คนอ่าน","/ใครอ่าน",".ใครอ่าน"]:
-                    line.sendText(msg.to,"🔷โปรดดูจำนวลคนแอบซุ่มโจมตี🔷\n🔘[by.™─┅❈͜͡✯WEEBOTLINE✯͜͡❈┅─]")
+                    line.sendText(msg.to,"👾โปรดดูจำนวลคนแอบซุ่มโจมตี👾\n[ BY: SELFBOT-BY:MAX ]")
                     line.sendText(msg.to,".อ่าน")
             if settings ["Api"] == True:
                 if msg.text in ["เช็คตั้งค่า","เช็คค่า","Set","Status","เช็คค่าเพื่อน"]:
-                    line.sendText(msg.to,"🔷กำลังเช็คการตั้งค่า🔷.......\n\n🔘[by.™─┅❈͜͡✯WEEBOTLINE✯͜͡❈┅─]")
+                    line.sendText(msg.to,"👾 กำลังเช็คการตั้งค่า 👾\n[ BY: SELFBOT-BY:MAX ]")
                     line.sendText(msg.to,".เช็ค")
             if settings ["Api"] == True:
                 if msg.text in ["ถาม","เรียก","ขานชื่อ"]:
-                    line.sendText(msg.to,"🆗บอททำงานอยู่100%🆗\n🔘[by.™─┅❈͜͡✯WEEBOTLINE✯͜͡❈┅─]")
-                    line.sendText(msg.to,"บอทตอบละเด้อ สำบายดีอยู่ดีมีแฮง")
+                    line.sendText(msg.to,"บอททำงานอยู่100%\n[ BY: SELFBOT-BY:MAX ]")
+                    line.sendText(msg.to,"ค ว ย อ ะ ไ ร")
                 if settings["autoRead"] == True:
                         line.sendChatChecked(to, msg_id)				
                 if to in read["readPoint"]:
@@ -5504,14 +5507,14 @@ def lineBot(op):
                         mentionees = mention['MENTIONEES']
                         for mention in mentionees:
                             if lineMID in mention["M"]:
-                                sendMention(to, sender,sender, "「ตอบแทคอัตโนมัติ」\n", "\n" + str(settings["pmMessage"]))
+                                sendMention(to, sender,sender, "「 ตอบแทคอัตโนมัติ 」\n", "\n" + str(settings["pmMessage"]))
                                 break
                 if msg.contentType == 0 and sender not in lineMID and msg.toType == 2:
                     if "MENTION" in msg.contentMetadata.keys() != None:
         	             if settings['kickMention'] == True:
         		             contact = line.getContact(msg._from)
         		             cName = contact.displayName
-        		             balas = ["เนื่องจากตอนนี้ผมเปิดระบบเตะคนแทคไว้ " + "\n👉" + cName + "\n🙏ต้องขออภัยด้วยจริงๆ🙏Bye!!!"]
+        		             balas = ["เนื่องจากตอนนี้ผมเปิดระบบเตะคนแทคไว้ " + "\n👉" + cName + "\n🙏 ต้องขออภัยด้วยจริงๆ 🙏"]
         		             ret_ = "" + random.choice(balas)                     
         		             name = re.findall(r'@(\w+)', msg.text)
         		             mention = ast.literal_eval(msg.contentMetadata["MENTION"])
@@ -5545,7 +5548,7 @@ def lineBot(op):
                          if settings['detectMention'] == True:
                              contact = line.getContact(msg._from)
                              cName = contact.displayName
-                             balas = ["『 ตอบแทคอัตโนมัติ』\n\n" + cName]
+                             balas = ["『 ตอบแทคอัตโนมัติ 』\n\n" + cName]
                              ret_ = "" + random.choice(balas)
                              name = re.findall(r'@(\w+)', msg.text)
                              mention = ast.literal_eval(msg.contentMetadata["MENTION"])
