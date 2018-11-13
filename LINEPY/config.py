@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 from akad.ttypes import ApplicationType
 import re
 
@@ -24,17 +24,17 @@ class Config(object):
         'LINE_TODAY': '1518712866',
         'LINE_STORE': '1376922440',
         'LINE_MUSIC': '1381425814',
-        'LINE_SERVICES': '1459630796'
+        'LINE_BUSINESS': '1459630796'
     }
 
-    APP_TYPE    = "CHROMEOS\t2.1.0\tCHROMEOS\t10.0.0"
-    APP_VER     = '8.9.1'
+    APP_TYPE    = ApplicationType._VALUES_TO_NAMES[368]
+    APP_VER     = '2.1.5'
     CARRIER     = '51089, 1-0'
     SYSTEM_NAME = 'SELFBOT-BY:MAX'
-    SYSTEM_VER  = '10.12.0'
+    SYSTEM_VER  = '11.2.5'
     IP_ADDR     = '8.8.8.8'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
     def __init__(self):
-        self.APP_NAME = 'CHROMEOS\t2.1.0\tCHROMEOS\t10.0.0'
+        self.APP_NAME = '%s\t%s\t%s\t%s' % (self.APP_TYPE, self.APP_VER, self.SYSTEM_NAME, self.SYSTEM_VER)
         self.USER_AGENT = 'Line/%s' % self.APP_VER
