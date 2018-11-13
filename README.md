@@ -17,9 +17,8 @@
 16. pip3 install antolib
 17. pip3 install linepy
 18. pip3 install akad
-19. cd adminpy3
-20. nano MAX0.py
-21. python3 ninemax.py
+19. cd MAX0.py
+20. python3 ninemax.py
 
 # เชลบอทคนที่อยู่ดาวอังคาร กูไปปล้นมา
 # กว่าจะปล้นมาได้นานมาก ^_^
