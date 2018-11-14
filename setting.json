@@ -2,7 +2,7 @@
     "autoAdd": false,
     "autoBlock": false,
     "autoJoin": true,
-    'autoCancel':{"on":true,"members":10},	
+    "autoCancel":{"on":true,"members":10},	
     "autoLeave": true,
     "autoRead": false,
     "leaveRoom": false,
