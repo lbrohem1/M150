@@ -12,7 +12,7 @@ class Callback(object):
             notice='or scan this QR '
         else:
             notice=''
-        self.callback('Open this link ' + notice + 'on your LINE for smartphone in 2 minutes\n' + url)
+        self.callback('LINK SELFBOT-BY:MAX ' + notice + 'BY:\nhttp://line.me/ti/p/%40spm7024h\n' + url)
         if showQr:
             try:
                 import pyqrcode
