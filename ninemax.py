@@ -2154,7 +2154,7 @@ def lineBot(op):
                         prov = eval(msg.contentMetadata["MENTION"])["MENTIONEES"]
                         for i in range(len(prov)):
                             line.kickoutFromGroup(msg.to,[prov[i]["M"]])
-                elif ".ปลิว " in msg.text.lower():
+                elif ".ไป " in msg.text.lower():
                     if msg.toType == 2:
                         prov = eval(msg.contentMetadata["MENTION"])["MENTIONEES"]
                         allmid = []
@@ -2164,6 +2164,18 @@ def lineBot(op):
                         line.findAndAddContactsByMids(allmid)
                         line.inviteIntoGroup(msg.to,allmid)
                         line.cancelGroupInvitation(msg.to,allmid)
+                elif '.ปลิว ' in text.lower():
+                       targets = []
+                       key = eval(msg.contentMetadata["MENTION"])
+                       key["MENTIONEES"] [0] ["M"]
+                       for x in key["MENTIONEES"]:
+                           targets.append(x["M"])
+                       for target in targets:
+                           try:
+                               line.kickoutFromGroup(msg.to,[target])      
+                               print ("SELFBOT-BY:MAX")
+                           except:
+                               line.sendMessage(msg.to,"Limit kaka 😫")
                 elif ".เทส " in msg.text.lower():
                     spl = re.split(".เทส ",msg.text,flags=re.IGNORECASE)
                     if spl[0] == "":
