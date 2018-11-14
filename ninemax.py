@@ -1,3 +1,4 @@
+# SELFBOT-BY:MAX
 # -*- coding: utf-8 -*-
 from linepy import *
 from akad.ttypes import Message
@@ -21,21 +22,21 @@ line = LINE()
 #line = LINE('')
 line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
-
+#==============================================================================#
 print ("BY:SELFBOT-BY:MAX")
-
+#==============================================================================#
 readOpen = codecs.open("read.json","r","utf-8")
 settingsOpen = codecs.open("temp.json","r","utf-8")
 read = json.load(readOpen)
 settings = json.load(settingsOpen)
-
+#==============================================================================#
 lineMID = line.profile.mid
 lineProfile = line.getProfile()
 lineSettings = line.getSettings()
-
+#==============================================================================#
 oepoll = OEPoll(line)
 #call = Call(line)
-
+#==============================================================================#
 Rfu = [line]
 Exc = [line]
 lineMID = line.getProfile().mid
@@ -72,7 +73,7 @@ settings = {
     "autoReply": False,
     "botcancel": False,
     "leaveRoom": False,
-    "detectMention": True,
+    "detectMention": False,
     "checkSticker": False,
     "checkContact": False,
     "checkPost": False,
@@ -84,7 +85,7 @@ settings = {
     "Lv": True,
     "Nk": True,
     "Api": True,
-    "Aip": False,
+    "Aip": True,
     "blacklist":{},
     "wbanlist":{},
     "winvite": False,
@@ -851,7 +852,7 @@ def lineBot(op):
                 sver = msgSticker["STKVER"]
                 sendSticker(op.param1, sver, spkg, sid)
         if op.type == 13:
-            print ("[ 13 ] มีคนเชิญคุณเข้ากลุ่ม")
+            print ("[ 13 ] SELFBOT-BY:MAX JOIN")
             group = line.getGroup(op.param1)
             contact = line.getContact(op.param2)
             if settings["autoJoin"] and lineMID in op.param3:
@@ -1067,10 +1068,10 @@ def lineBot(op):
                    stk_ver = msg.contentMetadata["STKVER"]
                    pkg_id = msg.contentMetadata["STKPKGID"]
                    ret_ = "\n\n    「 ข้อมูลสติกเกอร์ 」"
-                   ret_ += "\n⏩ รหัสสติกเกอร์ : {}".format(stk_id)
-                   ret_ += "\n⏩ สติกเกอร์เวอร์ชัน : {}".format(stk_ver)
-                   ret_ += "\n⏩ สติกเกอร์แพ็คเกจ : {}".format(pkg_id)
-                   ret_ += "\n⏩ ลิ้งสติกเกอร์ : line://shop/detail/{}".format(pkg_id)
+                   ret_ += "\n🤖 รหัสสติกเกอร์ : {}".format(stk_id)
+                   ret_ += "\n🤖 สติกเกอร์เวอร์ชัน : {}".format(stk_ver)
+                   ret_ += "\n🤖 สติกเกอร์แพ็คเกจ : {}".format(pkg_id)
+                   ret_ += "\n🤖 ลิ้งสติกเกอร์ : line://shop/detail/{}".format(pkg_id)
                    query = int(stk_id)
                    if type(query) == int:
                             data = 'https://stickershop.line-scdn.net/stickershop/v1/sticker/'+str(query)+'/ANDROID/sticker.png'
@@ -1210,58 +1211,58 @@ def lineBot(op):
                 elif text.lower() == '.เช็ค':
                     try:
                         ret_ = "╔═════════════════\n║    [ 🤖 🆂🆃🅰🆃🆄🆂 🤖 ]\n╠═════════════════"
-                        if settings["autoAdd"] == True: ret_ += "\n╠❂͜͡☬➣✔ ออโต้แอด 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ออโต้แอด 🤖 [ ᴏғғ ] "
-                        if settings["autoBlock"] == True: ret_ += "\n╠❂͜͡☬➣✔ ออโต้บล็อค 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ออโต้บล็อค 🤖 [ ᴏғғ ] "
-                        if settings["autoJoinTicket"] == True: ret_ += "\n╠❂͜͡☬➣✔ มุดลิ้ง 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ มุดลิ้ง 🤖 [ ᴏғғ ] "
-                        if settings["autoJoin"] == True: ret_ += "\n╠❂͜͡☬➣✔เข้าห้องออโต้ 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ เข้าห้องออโต้ 🤖 [ ᴏғғ ] "
-                        if settings["Api"] == True: ret_ += "\n╠❂͜͡☬➣✔ บอท api 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ บอท api 🤖 [ ᴏғғ ] "
-                        if settings["Aip"] == True: ret_ += "\n╠❂͜͡☬➣✔ แสกนคำพูด+คำสั่งบิน 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ แสกนคำพูด+คำสั่งบิน 🤖 [ ᴏғғ ] "
-                        if settings["Wc"] == True: ret_ += "\n╠❂͜͡☬➣✔ ข้อความต้อนรับสมาชิก 🤖 [ ᴏɴ ] "
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ข้อความต้อนรับสมาชิก 🤖 [ ᴏғғ ] "
-                        if settings["Lv"] == True: ret_ += "\n╠❂͜͡☬➣✔ ข้อความอำลาสมาชิก 🤖 [ ᴏɴ ] "
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ข้อความอำลาสมาชิก 🤖 [ ᴏғғ ] "
-                        if settings["Nk"] == True: ret_ += "\n╠❂͜͡☬➣✔ ข้อความแจ้งเตือนคนลบ 🤖 [ ᴏɴ ] "
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ข้อความแจ้งเตือนคนลบ 🤖 [ ᴏғғ ] "
+                        if settings["autoAdd"] == True: ret_ += "\n╠❂͜͡☬➣✔ ออโต้แอด 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ออโต้แอด 🤖 "
+                        if settings["autoBlock"] == True: ret_ += "\n╠❂͜͡☬➣✔ ออโต้บล็อค 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ออโต้บล็อค 🤖 "
+                        if settings["autoJoinTicket"] == True: ret_ += "\n╠❂͜͡☬➣✔ มุดลิ้ง 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ มุดลิ้ง 🤖 "
+                        if settings["autoJoin"] == True: ret_ += "\n╠❂͜͡☬➣✔เข้าห้องออโต้ 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ เข้าห้องออโต้ 🤖 "
+                        if settings["Api"] == True: ret_ += "\n╠❂͜͡☬➣✔ บอท api 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ บอท api 🤖 "
+                        if settings["Aip"] == True: ret_ += "\n╠❂͜͡☬➣✔ แสกนคำพูด+คำสั่งบิน 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ แสกนคำพูด+คำสั่งบิน 🤖 "
+                        if settings["Wc"] == True: ret_ += "\n╠❂͜͡☬➣✔ ข้อความต้อนรับสมาชิก 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ข้อความต้อนรับสมาชิก 🤖 "
+                        if settings["Lv"] == True: ret_ += "\n╠❂͜͡☬➣✔ ข้อความอำลาสมาชิก 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ข้อความอำลาสมาชิก 🤖 "
+                        if settings["Nk"] == True: ret_ += "\n╠❂͜͡☬➣✔ ข้อความแจ้งเตือนคนลบ 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ข้อความแจ้งเตือนคนลบ 🤖 "
                         if settings["autoCancel"]["on"] == True:ret_+="\n╠❂͜͡☬➣✔ ปฏิเสธกลุ่มที่มีน้อยกว่า: " + str(settings["autoCancel"]["members"]) + "คน"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ปฏิเสธกลุ่มเชิญ 🤖 [ ᴏғғ ] "						
-                        if settings["autoLeave"] == True: ret_ += "\n╠❂͜͡☬➣✔ ออกแชทรวม 🤖 [ ᴏɴ ] "
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ออกแชทรวม 🤖 [ ᴏғғ ] "
-                        if settings["autoRead"] == True: ret_ += "\n╠❂͜͡☬➣✔ อ่านออโต้ 🤖 [ ᴏɴ ] "
-                        else: ret_ += "\n╠❂͜͡☬➣✖ อ่านออโต้ 🤖 [ ᴏғғ ] "				
-                        if settings["checkContact"] == True: ret_ += "\n╠❂͜͡☬➣✔ อ่านคท 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ อ่านคท 🤖 [ ᴏғғ ] "
-                        if settings["checkPost"] == True: ret_ += "\n╠❂͜͡☬➣✔ เช็คโพส 🤖 [ ᴏɴ ] "
-                        else: ret_ += "\n╠❂͜͡☬➣✖ เช็คโพส 🤖 [ ᴏғғ ] "
-                        if settings["checkSticker"] == True: ret_ += "\n╠❂͜͡☬➣✔ Sticker 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ Sticker 🤖 [ ᴏғғ ] "
-                        if settings["pmMessage"] == True: ret_ += "\n╠❂͜͡☬➣✔ ตอบแทคแชท 🤖 [ ᴏɴ ] "
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ตอบแทคในแชท 🤖 [ ᴏғғ ] "
-                        if settings["detectMention"] == True: ret_ += "\n╠❂͜͡☬➣✔ ตอบกลับคนแทค 🤖 [ ᴏɴ ] "
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ตอบกลับคนแทค 🤖 [ ᴏғғ ] "
-                        if settings["potoMention"] == True: ret_ += "\n╠❂͜͡☬➣✔ แสดงภาพคนแทค 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ แสดงภาพคนแทค 🤖 [ ᴏғғ ] "
-                        if settings["kickMention"] == True: ret_ += "\n╠❂͜͡☬➣✔ เตะคนแทค 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ เตะคนแทค 🤖 [ ᴏғғ ] "
-                        if settings["delayMention"] == True: ret_ += "\n╠❂͜͡☬➣✔ แทคกลับคนแทค 🤖 [ ᴏɴ ] \n╠════[ระบบป้องกัน]════"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ แทคกลับคนแทค 🤖 [ ᴏғғ ] \n╠════[ระบบป้องกัน]════"
-                        if RfuProtect["inviteprotect"] == True: ret_ += "\n╠❂͜͡☬➣✔ กันเชิญ 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ กันเชิญ 🤖 [ ᴏғғ ] "
-                        if RfuProtect["cancelprotect"] == True: ret_ += "\n╠❂͜͡☬➣✔ กันยกเชิญ 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ กันยกเชิญ 🤖 [ ᴏғғ ]"
-                        if RfuProtect["protect"] == True: ret_ += "\n╠❂͜͡☬➣✔ ป้องกัน 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣ ป้องกัน 🤖 [ ᴏғғ ] "
-                        if RfuProtect["linkprotect"] == True: ret_ += "\n╠❂͜͡☬➣✔ ป้องกันเปิดลิ้ง 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ป้องกันเปิดลิ้ง 🤖 [ ᴏғғ ] "
-                        if RfuProtect["Protectguest"] == True: ret_ += "\n╠❂͜͡☬➣✔ ป้องกันสมาชิก 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ป้องกันสมาชิก 🤖 [ ᴏғғ ] "
-                        if RfuProtect["Protectjoin"] == True: ret_ += "\n╠❂͜͡☬➣✔ ป้องกันเข้ากลุ่ม 🤖 [ ᴏɴ ]"
-                        else: ret_ += "\n╠❂͜͡☬➣✖ ป้องกันเข้ากลุ่ม 🤖 [ ᴏғғ ]"						
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ปฏิเสธกลุ่มเชิญ 🤖 "						
+                        if settings["autoLeave"] == True: ret_ += "\n╠❂͜͡☬➣✔ ออกแชทรวม 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ออกแชทรวม 🤖 "
+                        if settings["autoRead"] == True: ret_ += "\n╠❂͜͡☬➣✔ อ่านออโต้ 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ อ่านออโต้ 🤖 "				
+                        if settings["checkContact"] == True: ret_ += "\n╠❂͜͡☬➣✔ อ่านคท 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ อ่านคท 🤖 "
+                        if settings["checkPost"] == True: ret_ += "\n╠❂͜͡☬➣✔ เช็คโพส 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ เช็คโพส 🤖 "
+                        if settings["checkSticker"] == True: ret_ += "\n╠❂͜͡☬➣✔ Sticker 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ Sticker 🤖 "
+                        if settings["pmMessage"] == True: ret_ += "\n╠❂͜͡☬➣✔ ตอบแทคแชท 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ตอบแทคในแชท 🤖 "
+                        if settings["detectMention"] == True: ret_ += "\n╠❂͜͡☬➣✔ ตอบกลับคนแทค 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ตอบกลับคนแทค 🤖 "
+                        if settings["potoMention"] == True: ret_ += "\n╠❂͜͡☬➣✔ แสดงภาพคนแทค 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ แสดงภาพคนแทค 🤖 "
+                        if settings["kickMention"] == True: ret_ += "\n╠❂͜͡☬➣✔ เตะคนแทค 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ เตะคนแทค 🤖 "
+                        if settings["delayMention"] == True: ret_ += "\n╠❂͜͡☬➣✔ แทคกลับคนแทค 🤖 \n╠════[ระบบป้องกัน]════"
+                        else: ret_ += "\n╠❂͜͡☬➣✖ แทคกลับคนแทค 🤖 \n╠════[ระบบป้องกัน]════"
+                        if RfuProtect["inviteprotect"] == True: ret_ += "\n╠❂͜͡☬➣✔ กันเชิญ 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ กันเชิญ 🤖 "
+                        if RfuProtect["cancelprotect"] == True: ret_ += "\n╠❂͜͡☬➣✔ กันยกเชิญ 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ กันยกเชิญ 🤖 "
+                        if RfuProtect["protect"] == True: ret_ += "\n╠❂͜͡☬➣✔ ป้องกัน 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣ ป้องกัน 🤖 "
+                        if RfuProtect["linkprotect"] == True: ret_ += "\n╠❂͜͡☬➣✔ ป้องกันเปิดลิ้ง 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ป้องกันเปิดลิ้ง 🤖 "
+                        if RfuProtect["Protectguest"] == True: ret_ += "\n╠❂͜͡☬➣✔ ป้องกันสมาชิก 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ป้องกันสมาชิก 🤖 "
+                        if RfuProtect["Protectjoin"] == True: ret_ += "\n╠❂͜͡☬➣✔ ป้องกันเข้ากลุ่ม 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ป้องกันเข้ากลุ่ม 🤖 "						
                         ret_ += "\n╠═════════════════\n║     BY: SELFBOT-BY:MAX\n╚═════════════════"
                         line.sendMessage(to, str(ret_))
                         line.sendContact(to, "u83211e3b69096f869d545aed2d1724d3")
@@ -1348,17 +1349,17 @@ def lineBot(op):
 #==============================================================================#
                 elif msg.text.lower() == "me":
                     me = line.getContact(lineMID)
-                    line.sendMessage(msg.to,"[👇ชื่อของพี่👇]")
+                    #line.sendMessage(msg.to,"[👇ชื่อของพี่👇]")
                     sendMessageWithMention(to, lineMID)
-                    line.sendMessage(msg.to,"[สเตตัส]\n" + me.statusMessage)
+                    #line.sendMessage(msg.to,"[สเตตัส]\n" + me.statusMessage)
                     line.sendContact(to, lineMID)
                     line.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + me.pictureStatus)
                     cover = line.getProfileCoverURL(lineMID)
                     line.sendImageWithURL(msg.to, cover)
                     line.sendMessage(msg.to,str(settings["comment"]))
-                elif text.lower() == ".คท":
+                elif text.lower() == "คท":
                     line.sendMentionFooter(to, '「 ผู้สร้างบอท 」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName);line.sendMessage(to, line.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+line.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv', 'type': 'mt', 'subText': "SELFBOT-BY:MAX", 'a-installUrl': 'https://line.me/ti/p/~max_pv', 'a-installUrl': ' https://line.me/ti/p/~max_pv', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv', 'i-linkUri': 'https://line.me/ti/p/~max_pv', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
-                elif text.lower() == ".นายแม็ค":
+                elif text.lower() == ".คท":
                     userid = "https://line.me/ti/p/~" + line.profile.userid
                     line.sendImageWithFooter(to, "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, str(userid), "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName)
                     line.sendMentionFooter(to, '「Me」\n', sender, str(userid), "http://dl.profile.line-cdn.net/"+line.getContact(sender).pictureStatus, line.getContact(sender).displayName)
