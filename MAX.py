@@ -1256,7 +1256,7 @@ def lineBot(op):
                         if RfuProtect["cancelprotect"] == True: ret_ += "\n╠❂͜͡☬➣✔ กันยกเชิญ 🤖 "
                         else: ret_ += "\n╠❂͜͡☬➣✖ กันยกเชิญ 🤖 "
                         if RfuProtect["protect"] == True: ret_ += "\n╠❂͜͡☬➣✔ ป้องกัน 🤖 "
-                        else: ret_ += "\n╠❂͜͡☬➣ ป้องกัน 🤖 "
+                        else: ret_ += "\n╠❂͜͡☬➣✖ ป้องกัน 🤖 "
                         if RfuProtect["linkprotect"] == True: ret_ += "\n╠❂͜͡☬➣✔ ป้องกันเปิดลิ้ง 🤖 "
                         else: ret_ += "\n╠❂͜͡☬➣✖ ป้องกันเปิดลิ้ง 🤖 "
                         if RfuProtect["Protectguest"] == True: ret_ += "\n╠❂͜͡☬➣✔ ป้องกันสมาชิก 🤖 "
@@ -1964,8 +1964,8 @@ def lineBot(op):
                             line.sendText(msg.to,"ข้อความสเตตัส:\n"+userData.statusMessage)
                             line.sendText(msg.to,"ไอดีบัญชี: "+userData.mid)
                 
-                elif "รับแก้ไฟล์+เพิ่มไฟล์+แก้ภาษา\n💝ราคาดูที่หน้างาน💝\n👉มีบริการให้เช่าบอทSAMURAI\nราคา300บาทต่อเดือน💖\n#เพิ่มคิกเกอร์ตัวละ100👌\n🎀สนใจรีบทัก..บอทpython3ฟังชั่นล้นหลาม🎁กำลังรอให้คุณเป็นเจ้าของ\nselfbot by:\n╔══════════════┓\n╠™❍✯͜͡WEE™SELFBOT✯͜͡❂➣\n╚══════════════┛" in msg.text:
-                    spl = msg.text.split("รับแก้ไฟล์+เพิ่มไฟล์+แก้ภาษา\n💝ราคาดูที่หน้างาน💝\n👉มีบริการให้เช่าบอทSAMURAI\nราคา300บาทต่อเดือน💖\n#เพิ่มคิกเกอร์ตัวละ100👌\n🎀สนใจรีบทัก..บอทpython3ฟังชั่นล้นหลาม🎁กำลังรอให้คุณเป็นเจ้าของ\nselfbot by:\n╔══════════════┓\n╠™❍✯͜͡WEE™SELFBOT✯͜͡❂➣\n╚══════════════┛")
+                elif "SELFBOT-BY:MAX" in msg.text:
+                    spl = msg.text.split("SELFBOT-BY:MAX")
                     if spl[len(spl)-1] == "":
                         line.sendText(msg.to,"กดที่นี่เพื่อเขย่าข้อความด้านบน:\nline://nv/chatMsg?chatId="+msg.to+"&messageId="+msg.id)
                 elif ".รัน @" in msg.text:
