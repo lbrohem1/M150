@@ -1,4 +1,3 @@
-# SELFBOT-BY:MAX
 1. apt update
 2. apt upgrade
 3. pkg install python3
@@ -13,9 +12,7 @@
 15. pip3 install googletrans
 16. pip3 install antolib
 17. pip3 install linepy
-18. pip3 install akad
-19. cd MAX0.py
-20. python3 ninemax.py
+18. pip3 ติดตั้ง akad
 
 # เชลบอทคนที่อยู่ดาวอังคาร กูไปปล้นมา
 # กว่าจะปล้นมาได้นานมาก ^_^
